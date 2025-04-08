@@ -31,7 +31,7 @@ const FavoriteButton = ({ productId }: FavoriteButtonProps) => {
   return (
     <button
       onClick={handleToggleFavorite}
-      className="text-red-500"
+      className="text-red-500 mt-2 ml-auto mr-2"
       aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
     >
       <Heart fill={isFavorite ? 'red' : 'none'} className="w-6 h-6" />
