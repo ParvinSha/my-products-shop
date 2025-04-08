@@ -23,7 +23,7 @@ const NavBar = () => {
         </div>
         <Link href="/" aria-label="Home page">
           <Image
-            src="/shopping-logo2.svg"
+            src="/shopping-logo.svg"
             alt="logo"
             width={0}
             height={0}
