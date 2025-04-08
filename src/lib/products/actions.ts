@@ -12,7 +12,7 @@ export async function fetchAllProducts() {
   return data
 }
 
-// Function to fetch all recipes
+// Function to fetch all products
 // with limit and skip params to support pagination. Default limit is 9
 export async function fetchProducts(
   ): Promise<Product[]> {
@@ -33,13 +33,13 @@ export async function fetchProducts(
     }
   
     // Add boolean isFavourite
-    const updatedRecipes: Product[] = data.products.map((product) => ({
+    const updatedProducts: Product[] = data.products.map((product) => ({
       ...product,
   
       isFavourite: Boolean(false)
     }))
   
-    return updatedRecipes
+    return updatedProducts
   }
 
 
