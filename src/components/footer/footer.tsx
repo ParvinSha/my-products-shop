@@ -11,7 +11,7 @@ const Footer = () => {
           <Image
             className="w-30"
             src={'/shopping-logo.svg'}
-            alt="Awesome recipes logo"
+            alt="products logo"
             height={100}
             width={100}
           />
