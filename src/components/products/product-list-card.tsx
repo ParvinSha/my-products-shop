@@ -12,7 +12,7 @@ const ProductListCard = ({ product }: { product: Product }) => {
   return (
     <Card
       className="py-0 max-w-96 justify-between h-full cursor-pointer dark:bg-orange-950"
-      onClick={() => router.push(`/products/${product.id}`)}
+      onClick={() => router.push(`/product/${product.id}`)}
     >
       <FavoriteButton productId={product.id} />
       <Image
