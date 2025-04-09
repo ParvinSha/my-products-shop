@@ -42,4 +42,18 @@ export async function fetchProducts(
     return updatedProducts
   }
 
+  // Function to get a single product by id
+  export async function fetchProductById(id: number) {
+    const url = `${API_ENDPOINT}/${id}`
+    const res = await fetch(url)
+
+    if (!res.ok) {
+      throw new Error(`Error HTTP status: ${res.status}`)
+    }
+
+    const productData: Product = await res.json()
+
+    return productData
+  }
+
 
