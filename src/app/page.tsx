@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <a
           className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-lg sm:text-xl h-12 px-6"
-          href=""
+          href="/products"
         >
           <ShoppingCart size={24} />
           Go to Products Shop

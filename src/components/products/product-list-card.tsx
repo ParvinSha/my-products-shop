@@ -5,6 +5,7 @@ import Image from 'next/image'
 import StarRating from '../ui/rating'
 import { useRouter } from 'next/navigation'
 import FavoriteButton from '../ui/favorite'
+import AddToCartButton from "./addtocart-button";
 
 const ProductListCard = ({ product }: { product: Product }) => {
   const router = useRouter()
@@ -31,12 +32,15 @@ const ProductListCard = ({ product }: { product: Product }) => {
           <span>{product.price}$</span>
         </div>
       </CardContent>      
-      <CardFooter className="px-4 mb-4 mt-4 mb-10 flex justify-between items-center">
+      <CardFooter className="px-4 mt-4 flex justify-between items-center">
         <div className="flex gap-2">
           <StarRating rating={product.rating} size={14} />
           <span className="text-xs">{product.rating}</span>
         </div>
       </CardFooter>
+      <div className="flex justify-end p-4">
+        <AddToCartButton product={product} />
+      </div>
     </Card>
   )
 }
