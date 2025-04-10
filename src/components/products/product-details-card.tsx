@@ -9,7 +9,7 @@ import {
 } from "../ui/card";
 import StarRating from "../ui/rating";
 import Image from "next/image";
-// import AddToCartButton from "./addtocart-button";
+import AddToCartButton from "./addtocart-button";
 
 export async function ProductDetailsCard({
   product,
@@ -47,7 +47,7 @@ export async function ProductDetailsCard({
         </div>
       </CardContent>
       <CardFooter className="flex justify-end">
-        {/* <AddToCartButton product={productDetails} /> */}
+        <AddToCartButton product={productDetails} />
       </CardFooter>
     </Card>
   );
