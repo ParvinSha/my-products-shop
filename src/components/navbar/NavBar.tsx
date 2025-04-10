@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="bg-red-900 p-2 border-b-2 border-b-red-500 dark:bg-red-700 dark:border-b-red-800"
+      className="bg-red-900 dark:bg-red-700"
       aria-label="Main navigation"
     >
       <div className="container mx-auto flex justify-between items-end">
@@ -31,12 +31,12 @@ const NavBar = () => {
           />
         </Link>
         {/* menu for desktop */}
-        <ul className="hidden md:flex space-x-4 gap-0">
+        <ul className="hidden md:flex space-x-4 gap-0 my-10">
           <li>
             <Link
               href="/"
               aria-label="Go to home page"
-              className={`text-2xl px-4 pb-2.5 pt-4 hover:bg-red-500 dark:hover:bg-red-800 rounded-t-lg ${
+              className={`text-2xl px-4 py-3 hover:bg-red-500 dark:hover:bg-red-800 rounded-2xl ${
                 pathname === '/' ? 'bg-red-500 dark:bg-red-800' : ''
               }`}
             >
@@ -47,7 +47,7 @@ const NavBar = () => {
             <Link
               href="/products"
               aria-label="View all products"
-              className={`text-2xl px-4 pb-2.5 pt-4 hover:bg-red-500 dark:hover:bg-red-800 rounded-t-lg ${
+              className={`text-2xl px-4 py-3 hover:bg-red-500 dark:hover:bg-red-800 rounded-2xl ${
                 pathname.includes('/products')
                   ? 'bg-red-500 dark:bg-red-800'
                   : ''
