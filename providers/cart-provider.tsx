@@ -12,6 +12,9 @@ type CartItem = {
 type CartContextType = {
   cart: CartItem[];
   addToCart: (product: Product) => void;
+  increaseQty: (productId: number) => void;
+  decreaseQty: (productId: number) => void;
+  removeFromCart: (productId: number) => void;
   cartTotal: number;
   cartCount: number;
 };
@@ -51,6 +54,35 @@ export default function CartProvider({
     });
   }
 
+    function increaseQty(productId: number) {
+      setCart((prevCart) =>
+        prevCart.map((item) =>
+          item.product.id === productId
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        )
+      );
+    }
+
+    function decreaseQty(productId: number) {
+      setCart((prevCart) =>
+        prevCart
+          .map((item) =>
+            item.product.id === productId
+              ? { ...item, quantity: item.quantity - 1 }
+              : item
+          )
+          .filter((item) => item.quantity > 0) // Remove item if quantity drops to 0
+      );
+    }
+
+    function removeFromCart(productId: number) {
+      setCart((prevCart) =>
+        prevCart.filter((item) => item.product.id !== productId)
+      );
+    }
+
+
   //make the total amount of items in the cart available
   const cartCount = cart.reduce((count, item) => count + item.quantity, 0);
 
@@ -62,7 +94,7 @@ export default function CartProvider({
 
   //return our context to be used
   return (
-    <CartContext.Provider value={{ cart, addToCart, cartTotal, cartCount }}>
+    <CartContext.Provider value={{ cart, addToCart, increaseQty, decreaseQty, removeFromCart, cartTotal, cartCount }}>
       {children}
     </CartContext.Provider>
   );
