@@ -35,7 +35,7 @@ export default function RootLayout({
         <CartProvider>
           
         <header className="bg-red-900 py-2">
-          <div className="container flex justify-between items-center space-x-1 mx-auto">
+          <div className="container flex justify-between items-center space-x-1 mx-auto pr-5 md:pr-0">
             <div className="max-w-xl w-full">
               <NavBar />
             </div>
