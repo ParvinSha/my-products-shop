@@ -7,6 +7,7 @@ const Products = async ({
     products: Promise<Product[]>
   }) => {
     const allProducts = await products
+    console.log("Total Products:" + allProducts.length)
   
     if (!allProducts || allProducts.length === 0) {
       return (
