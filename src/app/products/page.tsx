@@ -36,7 +36,7 @@ export default async function ProductsList({
 
   return (
     <main className="space-y-4 container mx-auto mt-10">
-      <div className="flex gap-4 mt-4 ml-20">
+      <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-center justify-center sm:justify-start mt-4 ml-20">
         <Suspense fallback={<LoadingSelect />}>
           <CategorySelect categories={categories} />
         </Suspense>
