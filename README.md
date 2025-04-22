@@ -43,7 +43,7 @@ The project was developed by me over a two-week period.
 
 ## Development Workflow
 
-We followed an agile methodology with:
+I followed below methodology with:
 
 - **Prep Week**: Planning & setup.
 - **Sprint 1**
