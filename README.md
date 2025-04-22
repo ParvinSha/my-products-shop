@@ -4,24 +4,52 @@ My Products Shop is an e-commerce app built with Next.js, Tailwind, Shadcn, and 
 allows users to browse, sort, and filter products by category fetched from the DummyJSON API.
 The project was developed only by me over a two-week period.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Home Page**: Click a button to navigate to Products page.
+- **Products List (`/products`)**:
+  - Displays a list of all products.
+  - Select by Category
+  - "Order by" dropdown to sort products (ascending, descending, or none).
+- **Product Details (`/product/[id]`)**: View full details of a selected product.
+- **Shopping Cart**: Shows list of products added to the cart.
+- **Responsive Design**: Styled with Tailwind CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out
-[the Next.js GitHub repository](https://github.com/vercel/next.js) - your
-feedback and contributions are welcome!
+- **Framework**: [Next.js (App Router)](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/),
+  [Shadcn](https://ui.shadcn.com/)
+- **Icons**: [Lucide](https://lucide.dev/)
+- **API**: [DummyJSON (Recipes)](https://dummyjson.com/)
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ParvinSha/my-products-shop.git
+   cd my-products-shop
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)
-for more details.
+3. Run the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Development Workflow
+
+We followed an agile methodology with:
+
+- **Prep Week**: Planning & setup.
+- **Sprint 1**
+- **Sprint 2**
+
+- **Git Workflow**:
+  - Feature branches for each task.
+  - Pull requests to the `dev` branch reviewed before merging.
+  - Regular commits to ensure continuity.
