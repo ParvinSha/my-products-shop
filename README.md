@@ -1,30 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with
-[`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
-
-You can start editing the page by modifying `app/page.tsx`. The page
-auto-updates as you edit the file.
-
-This project uses
-[`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
-to automatically optimize and load [Geist](https://vercel.com/font), a new font
-family for Vercel.
+My Products Shop is an e-commerce app built with Next.js, Tailwind, Shadcn, and Lucide. It
+allows users to browse, sort, and filter products by category fetched from the DummyJSON API.
+The project was developed only by me over a two-week period.
 
 ## Learn More
 
