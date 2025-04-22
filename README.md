@@ -2,7 +2,7 @@
 
 My Products Shop is an e-commerce app built with Next.js, Tailwind, Shadcn, and Lucide. It
 allows users to browse, sort, and filter products by category fetched from the DummyJSON API.
-The project was developed only by me over a two-week period.
+The project was developed by me over a two-week period.
 
 ## Features
 
